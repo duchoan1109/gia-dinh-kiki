@@ -5,11 +5,14 @@
 </head>
 <body style="text-align:center;margin-top:100px;font-family:sans-serif;">
 
-  <h2>Nhập mã </h2>
-  <input type="password" id="password">
-  <button onclick="check()">Enter</button>
+  <h2>Chị Hân thích làm việc nhà gọi là gì ? </h2>
 
-  <p id="hint" style="color:blue;"></p>
+  <p style="color:blue;font-size:18px;">
+    Gợi ý: 7 chữ , không dấu
+  </p>
+
+  <input type="text" id="password">
+  <button onclick="check()">Enter</button>
 
   <script>
     function check() {
@@ -18,7 +21,7 @@
       if(pass === "damdang") {
         window.location.href = "https://share.timo.vn/vn/p/94dcc3f2-0106-453b-99ed-2f4651b42400";
       } else {
-        document.getElementById("hint").innerText = "Gợi ý: chị Hân thích làm việc nhà là gì ? , không cách có 7 chữ";
+        alert("Sai");
       }
     }
   </script>

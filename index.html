@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secret Page</title>
+</head>
+<body style="text-align:center;margin-top:100px;font-family:sans-serif;">
+
+  <h2>Nhập mã </h2>
+  <input type="password" id="password">
+  <button onclick="check()">Enter</button>
+
+  <p id="hint" style="color:blue;"></p>
+
+  <script>
+    function check() {
+      var pass = document.getElementById("password").value;
+
+      if(pass === "damdang") {
+        window.location.href = "https://share.timo.vn/vn/p/94dcc3f2-0106-453b-99ed-2f4651b42400";
+      } else {
+        document.getElementById("hint").innerText = "Gợi ý: chị Hân thích làm việc nhà là gì ? , không cách có 7 chữ";
+      }
+    }
+  </script>
+
+</body>
+</html>

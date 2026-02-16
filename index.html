@@ -3,25 +3,59 @@
 <head>
   <title>Secret Page</title>
 </head>
-<body style="text-align:center;margin-top:100px;font-family:sans-serif;">
+<body style="text-align:center;margin-top:60px;font-family:sans-serif;">
 
-  <h2>Chị Hân thích làm việc nhà gọi là gì ? </h2>
+  <h2>Chọn câu hỏi</h2>
 
-  <p style="color:blue;font-size:18px;">
-    Gợi ý: 7 chữ , không dấu
-  </p>
+  <!-- Câu 1 -->
+  <div style="margin-bottom:30px;">
+    <h3>Câu 1 : chị Hân thích làm việc nhà là gì ?</h3>
+    <p style="color:blue;">Gợi ý: không dấu , 7 chữ</p>
+    <input type="text" id="q1">
+    <button onclick="check1()">Enter</button>
+  </div>
 
-  <input type="text" id="password">
-  <button onclick="check()">Enter</button>
+  <!-- Câu 2 -->
+  <div style="margin-bottom:30px;">
+    <h3>Câu 2 : Lớp 3 Sửu bi học lớp 3 gì</h3>
+    <p style="color:blue;">Gợi ý : .../p>
+    <input type="text" id="q2">
+    <button onclick="check2()">Enter</button>
+  </div>
+
+  <!-- Câu 3 -->
+  <div style="margin-bottom:30px;">
+    <h3>Câu 3 : Lớp 2 ban đầu sửu bi học là 2 gì</h3>
+    <p style="color:blue;">Gợi ý: ... </p>
+    <input type="text" id="q3">
+    <button onclick="check3()">Enter</button>
+  </div>
 
   <script>
-    function check() {
-      var pass = document.getElementById("password").value;
-
+    function check1() {
+      var pass = document.getElementById("q1").value;
       if(pass === "damdang") {
         window.location.href = "https://share.timo.vn/vn/p/70ef8be6-afee-4e94-b3f8-584c5cd1fbc3";
       } else {
-        alert("Sai");
+        alert("Sai câu 1!");
+      }
+    }
+
+    function check2() {
+      var pass = document.getElementById("q2").value;
+      if(pass === "3B") {
+        window.location.href = "https://share.timo.vn/vn/p/60545401-5f6c-4831-9654-b9a6512e852b";
+      } else {
+        alert("Sai câu 2!");
+      }
+    }
+
+    function check3() {
+      var pass = document.getElementById("q3").value;
+      if(pass === "2E") {
+        window.location.href = "https://share.timo.vn/vn/p/2336502c-48c1-4593-b23e-91d5b30a7cfe";
+      } else {
+        alert("Sai câu 3!");
       }
     }
   </script>
